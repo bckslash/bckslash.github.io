@@ -5,7 +5,7 @@
 - [Built with](#built-with)
 - [Author](#author)
 
-### School project ATW
+### School project AWT
 
 - Video games library
 
