@@ -7,7 +7,7 @@
 
 ### The Title
 
-- School project fos subject AWT:
+- School project for subject AWT:
 
 ### Screenshot
 
