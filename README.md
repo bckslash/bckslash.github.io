@@ -5,9 +5,9 @@
 - [Built with](#built-with)
 - [Author](#author)
 
-### The Title
+### School project ATW
 
-- School project for subject AWT:
+- Video games library
 
 ### Screenshot
 
