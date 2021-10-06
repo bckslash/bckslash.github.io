@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- *META DATA -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,19 +16,34 @@
 		<meta name="author" content="Robert Smrek" />
 		<title>Game Library</title>
 		<link rel="icon" href="./img/logo-white.svg" />
+
+		<!-- *CSS -->
 		<link rel="stylesheet" type="text/css" href="./src/style.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
 			href="./node_modules/@fortawesome/fontawesome-free/css/all.css"
 		/>
+
+		<!-- *JS -->
 		<script defer src="./src/script.js"></script>
 		<script
 			defer
+			type="text/javascript"
+			src="./node_modules/vanilla-tilt/src/vanilla-tilt.js"
+		></script>
+		<script
+			defer
+			type="text/javascript"
 			src="./node_modules/@fortawesome/fontawesome-free/js/all.js"
 		></script>
-		<script defer src="/node_modules/jquery/dist/jquery.min.js"></script>
+		<script
+			defer
+			type="text/javascript"
+			src="/node_modules/jquery/dist/jquery.min.js"
+		></script>
 	</head>
+
 	<body class="dark">
 		<header>
 			<button class="btn-theme" type="button"></button>
@@ -70,7 +86,7 @@
 						class="image-container"
 						style="background-image: url(/img/gta_img.jpg)"
 					></div>
-					<div class="info-container">
+					<div class="info-container" data-tilt>
 						<h1 class="title game-title">Grand Theft Auto V</h1>
 						<p>
 							Grand Theft Auto V for PC offers players the option
