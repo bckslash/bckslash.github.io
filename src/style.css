@@ -6,7 +6,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	transition: 100ms ease-in-out;
+	transition: 10ms ease-in-out;
 }
 
 /* *scrollbar */
@@ -122,6 +122,7 @@ small {
 /* *Themes */
 
 :root {
+	/* grays */
 	--gray0: #f8f8f8;
 	--gray1: #e7e7e7;
 	--gray2: #c0c0c0;
@@ -129,11 +130,21 @@ small {
 	--gray4: #525252;
 	--gray5: #333333;
 	--gray6: #1d1d1d;
+
+	/* dark */
 	--dark: #171a21;
 	--blue1: #1a546b;
 	--blue2: #131b26;
 	--blue3: #2490bb;
-	--blue4: #93e0ff;
+
+	/* light */
+	--light1: #f8f2f5;
+	--light2: #d2d6ca;
+	--light3: #9eb78f;
+	--light4: #729b79;
+	--light5: #475b63;
+	--light6: #cad6c2;
+
 
 	--shadow: 5px 5px 10px rgba(0, 0, 0, 20%);
 }
@@ -159,23 +170,23 @@ small {
 }
 
 .light {
-	--bg: linear-gradient(to bottom, var(--gray0), var(--gray1));
-	--bg-nav: var(--blue1);
-	--bg-dropdown: linear-gradient(to top, var(--gray0), var(--blue1));
+	--bg: linear-gradient(to bottom, var(--light1), var(--light6));
+	--bg-nav: var(--light3);
+	--bg-dropdown: linear-gradient(to top, var(--gray0), var(--light4));
 	--bg-dropdown-right: linear-gradient(
 		to left,
 		rgb(255, 255, 255, 10%),
-		var(--blue1)
+		var(--light4)
 	);
 	--bg-dropdown-left: linear-gradient(
 		to right,
-		rgb(255, 255, 255, 10%),
-		var(--blue1)
+		rgba(128, 109, 109, 0.1),
+		var(--light4)
 	);
-	--text: var(--gray0);
+	--text: var(--dark);
 	--title: var(--dark);
 	--btn: var(--dark);
-	--btn-bg: var(--gray0);
+	--btn-bg: var(--light1);
 }
 
 #dark::before {
