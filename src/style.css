@@ -9,7 +9,7 @@
 	transition: 100ms ease-in-out;
 }
 
-/* scrollbar */
+/* *scrollbar */
 
 ::-webkit-scrollbar {
 	width: 0.5rem;
@@ -48,6 +48,7 @@ header {
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	z-index: 3;
+	padding: 1rem 2rem;
 }
 
 footer {
@@ -55,7 +56,9 @@ footer {
 	display: flex;
 	justify-content: center;
 	background: var(--bg-nav);
-	gap: 2rem;
+	gap: 4rem;
+	flex-wrap: wrap;
+	padding: 1rem 2rem;
 }
 
 h1,
@@ -98,15 +101,17 @@ a {
 
 main {
 	min-height: 100vh;
-	min-width: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 	flex-wrap: wrap;
 	padding-top: 10vh;
+	gap: 4rem 0;
 }
 
-img {
-	width: 2rem;
+.game-main-page{
+	margin: 4rem 0;
 }
 
 small {
@@ -114,7 +119,7 @@ small {
 	color: var(--title);
 }
 
-/* Themes */
+/* *Themes */
 
 :root {
 	--gray0: #f8f8f8;
@@ -181,7 +186,7 @@ small {
 	background: #ffffff;
 }
 
-/* theme btn */
+/* *theme btn */
 
 .btn-theme {
 	background-color: var(--btn-bg);
@@ -216,23 +221,24 @@ small {
 	left: 1rem;
 }
 
-/* navbar */
+/* *navbar */
 
 .nav {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	height: 100%;
 	width: 80%;
 }
 
 .nav-list {
-	justify-content: flex-end;
-	gap: 2rem;
+	justify-content: center;
+	align-items: center;
 	width: 50%;
+	gap: 3rem;
 }
 
-/* footer */
+/* *footer */
 
 .footer-logo-container {
 	display: grid;
@@ -242,11 +248,26 @@ small {
 .footer-text-container {
 	text-align: left;
 	display: grid;
-	align-items: center;
-	width: 38%;
+	place-items: center;
+	width: 30%;
 }
 
-/* main page */
+
+.footer-links-container{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: .5rem;
+}
+.footer-links-container li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .5rem;
+}
+
+/* *main page */
 
 .title-section {
 	display: flex;
@@ -254,6 +275,7 @@ small {
 	align-items: flex-start;
 	flex-direction: column;
 	gap: 1rem;
+	height: auto;
 }
 
 .btn {
@@ -274,10 +296,10 @@ small {
 }
 
 aside {
-	max-width: 50vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .preview-container {
@@ -287,11 +309,11 @@ aside {
 	background-color: var(--bg-nav);
 	box-shadow: var(--shadow);
 	cursor: pointer;
-	margin: 4rem 0 4rem 0;
 	transition: 200ms ease;
-	max-width: 40vw;
-	min-height: 30vh;
 	z-index: 1;
+	min-width: 30vw;
+	max-width: 40vw;
+	min-height: 20rem;
 }
 
 .preview-container:hover {
@@ -354,6 +376,10 @@ table {
 
 .logo {
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
 }
 
 .logo a {
@@ -369,8 +395,8 @@ table {
 }
 
 .library-item-container {
-	min-height: 20rem;
-	width: 40%;
+	min-width: 20rem;
+	min-height: 25rem;
 }
 
 .game-title {
