@@ -187,6 +187,7 @@ small {
 	--title: var(--dark);
 	--btn: var(--dark);
 	--btn-bg: var(--light1);
+	--shadow: none;
 }
 
 #dark::before {
