@@ -56,7 +56,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	background: var(--bg-nav);
-	gap: 4rem;
+	gap: 2rem;
 	flex-wrap: wrap;
 	padding: 1rem 2rem;
 }
@@ -107,7 +107,7 @@ main {
 	align-items: center;
 	flex-wrap: wrap;
 	padding-top: 10vh;
-	gap: 4rem 0;
+	gap: 5rem 0;
 }
 
 .game-main-page {
@@ -253,7 +253,8 @@ small {
 /* *footer */
 
 .footer-logo-container {
-	display: grid;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -261,7 +262,7 @@ small {
 	text-align: left;
 	display: grid;
 	place-items: center;
-	width: 30%;
+	width: 34%;
 }
 
 .footer-links-container {
@@ -341,7 +342,7 @@ aside {
 	justify-content: space-evenly;
 	align-items: flex-start;
 	flex-direction: column;
-	margin: 1rem 2rem;
+	padding: 1rem 2rem;
 }
 
 .info-container p {
@@ -405,8 +406,22 @@ table {
 }
 
 .library-item-container {
+	width: 30vw;
 	min-width: 20rem;
 	min-height: 25rem;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.library-item-container .image-container{
+	width: 100%;
+	min-height: 30vh;
+	background-color: red;
+}
+
+.library-item-container .info-container{
+	min-height: 30vh;
+	padding: 2rem 2rem;
 }
 
 .game-title {
