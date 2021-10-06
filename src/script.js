@@ -14,3 +14,12 @@ btn_theme.addEventListener("click", () => {
 	btn_theme.classList.toggle("dark");
 });
 
+const footer_logo = document.querySelector(".footer-logo-container");
+footer_logo.addEventListener("click", (e) => {
+	e.preventDefault;
+	window.scrollTo({
+		top: 0,
+		left: 0,
+		behavior: "smooth"
+	});
+});
