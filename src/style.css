@@ -239,15 +239,20 @@ small {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 100%;
-	width: 80%;
+	height: 100%; /* !use in mobile design as hamburger menu */
+	width: 50%;
+	flex-wrap: wrap;
 }
 
 .nav-list {
-	justify-content: center;
-	align-items: center;
-	width: 50%;
+	justify-content: space-between;
 	gap: 3rem;
+	width: auto;
+}
+
+.nav-list li{
+	flex: 1;
+	text-align: center;
 }
 
 /* *footer */
@@ -391,7 +396,6 @@ table {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-grow: 1;
 }
 
 .logo a {
