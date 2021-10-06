@@ -110,7 +110,7 @@ main {
 	gap: 4rem 0;
 }
 
-.game-main-page{
+.game-main-page {
 	margin: 4rem 0;
 }
 
@@ -252,19 +252,18 @@ small {
 	width: 30%;
 }
 
-
-.footer-links-container{
+.footer-links-container {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
-	gap: .5rem;
+	gap: 0.5rem;
 }
-.footer-links-container li{
+.footer-links-container li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: .5rem;
+	gap: 0.5rem;
 }
 
 /* *main page */
@@ -402,7 +401,7 @@ table {
 	font-size: 1.2rem;
 }
 
-/* keyframes */
+/* *keyframes */
 
 @keyframes rainbow {
 	from {
@@ -413,9 +412,10 @@ table {
 	}
 }
 
-/* form */
+/* *form */
 
 form {
+	height: 80vh;
 	min-width: 45%;
 	display: flex;
 	justify-content: center;
@@ -444,7 +444,7 @@ textarea:hover {
 }
 
 textarea {
-	height: 30%;
+	height: 30vh;
 }
 
 .about-page {
