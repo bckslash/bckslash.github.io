@@ -14,63 +14,134 @@
 		/>
 		<meta name="author" content="Robert Smrek" />
 		<title>Game Library</title>
-		<link rel="icon" href="./img/logo-white.svg" />
+		<link rel="icon" href="/img/icon.svg" />
+
+		<!-- *CSS -->
 		<link rel="stylesheet" type="text/css" href="/src/style.css" />
 		<link
+			href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
 			rel="stylesheet"
-			type="text/css"
-			href="/node_modules/@fortawesome/fontawesome-free/css/all.css"
 		/>
+
+		<!-- *JS -->
 		<script defer src="/src/script.js"></script>
 		<script
 			defer
-			src="/node_modules/@fortawesome/fontawesome-free/js/all.js"
+			type="text/javascript"
+			src="/node_modules/vanilla-tilt/src/vanilla-tilt.js"
 		></script>
-		<script defer src="/node_modules/jquery/dist/jquery.min.js"></script>
+		<script
+			defer
+			type="text/javascript"
+			src="/node_modules/jquery/dist/jquery.min.js"
+		></script>
+		<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 	</head>
 	<body class="dark">
 		<header>
 			<button class="btn-theme" type="button"></button>
 			<nav class="nav">
-				<h2 class="title nav-title logo">
-					<h2 class="title nav-title logo">
-						<a href="/index.html"
-							><img src="/img/logo-white.svg" alt="logo" />GLIB</a
-						>
-					</h2>
+				<h2 class="title logo">
+					<a
+						href="/index.html"
+						target="_self"
+						rel="noopener noreferrer"
+					>
+						<i class="bx bx-game"></i>.LIB
+					</a>
 				</h2>
 				<ul class="nav nav-list">
 					<li class="list-item">
-						<a href="/index.html">HOME</a>
+						<a
+							href="/index.html"
+							target="_self"
+							rel="noopener noreferrer"
+							>HOME</a
+						>
 					</li>
 					<li class="list-item">
-						<a href="./games.html">GAMES</a>
+						<a
+							href="/pages/games.html"
+							target="_self"
+							rel="noopener noreferrer"
+							>GAMES</a
+						>
 					</li>
 					<li class="list-item">
-						<a href="./about.html">ABOUT</a>
+						<a
+							href="/pages/about.html"
+							target="_self"
+							rel="noopener noreferrer"
+							>ABOUT</a
+						>
 					</li>
 					<li class="list-item">
-						<a href="./contact.html">CONTACT</a>
+						<a
+							href="/pages/contact.html"
+							target="_self"
+							rel="noopener noreferrer"
+							>CONTACT</a
+						>
 					</li>
 				</ul>
 			</nav>
 		</header>
-		<main></main>
+		<main>
+			<!-- main code here -->
+		</main>
 		<footer>
 			<div class="footer-logo-container">
-				<h2 class="title nav-title logo">
-					<a href="/index.html"
-						><img src="/img/logo-white.svg" alt="logo" />GLIB</a
-					>
-				</h2>
+				<h2 class="title logo"><i class="bx bx-game"></i>.LIB</h2>
 			</div>
 			<div class="footer-text-container">
 				<p>
-					© 2021 TUKE Robert Smrek. All rights reserved. All trademarks are
-					property of their respective owners in the EU and other
-					countries.
+					<em>&copy; 2021 TUKE Robert Smrek Game Library.</em> All
+					rights reserved. All trademarks are property of their
+					respective owners in the EU and other countries.
 				</p>
 			</div>
+			<ul class="footer-links-container">
+				<li>
+					<i class="bx bxl-instagram-alt"></i
+					><a
+						href="http://www.instagram.com/rb.smk"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Instagram</a
+					>
+				</li>
+				<li>
+					<i class="bx bxl-linkedin-square"></i
+					><a
+						href="http://www.linkedin.com/in/robertsmrek"
+						target="_blank"
+						rel="noopener noreferrer"
+						>LinkedIn</a
+					>
+				</li>
+				<li>
+					<i class="bx bxl-github"></i
+					><a
+						href="http://www.github.com/bckslash"
+						target="_blank"
+						rel="noopener noreferrer"
+						>GitHub</a
+					>
+				</li>
+				<li>
+					<img
+						src="/img/tuke-logo.svg"
+						alt="tuke logo"
+						width="14px"
+					/>
+					<a
+						href="http://www.tuke.sk"
+						target="_blank"
+						rel="noopener noreferrer"
+						>TUKE</a
+					>
+				</li>
+			</ul>
 		</footer>
 	</body>
 </html>
