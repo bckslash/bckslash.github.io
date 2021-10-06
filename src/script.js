@@ -23,3 +23,5 @@ footer_logo.addEventListener("click", (e) => {
 		behavior: "smooth",
 	});
 });
+
+ScrollReveal().reveal(".library-item-container", { delay: 100 });
