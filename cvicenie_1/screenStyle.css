@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+body{
+	font-family: 'Courier New', Courier, monospace;
+	background-color: snow;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+header, footer{
+	padding: 2rem;
+	min-height: 10vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: salmon;
+}
+
+header{
+	flex-direction: column;
+}
+
+main{
+	padding: 2rem;
+	min-height: 80vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.svg{
+	width: 10em;
+}
