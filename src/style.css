@@ -145,7 +145,6 @@ small {
 	--light5: #475b63;
 	--light6: #cad6c2;
 
-
 	--shadow: 5px 5px 10px rgba(0, 0, 0, 20%);
 }
 
@@ -250,7 +249,7 @@ small {
 	width: auto;
 }
 
-.nav-list li{
+.nav-list li {
 	flex: 1;
 	text-align: center;
 }
@@ -417,13 +416,13 @@ table {
 	justify-content: space-evenly;
 }
 
-.library-item-container .image-container{
+.library-item-container .image-container {
 	width: 100%;
 	min-height: 30vh;
 	background-color: red;
 }
 
-.library-item-container .info-container{
+.library-item-container .info-container {
 	min-height: 30vh;
 	padding: 2rem 2rem;
 }
@@ -494,4 +493,91 @@ textarea {
 	text-align: justify;
 	text-indent: 4rem;
 	color: var(--title);
+}
+
+@media screen and (max-width: 1024px) {
+	.preview-container {
+		font-size: 0.8rem;
+		width: 100%;
+		min-width: 20rem;
+		min-height: 25rem;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	.preview-container .image-container {
+		width: 100%;
+		min-height: 30vh;
+		background-color: red;
+	}
+
+	.preview-container .info-container {
+		min-height: 30vh;
+		padding: 1rem;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+
+	aside {
+		flex-direction: column;
+		max-width: 100vw;
+		margin: 0.5rem;
+	}
+
+	.left {
+		transform: rotate(90deg) translateX(2.5rem);
+		-webkit-transform: rotate(90deg) translateX(2.5rem);
+		-moz-transform: rotate(90deg) translateX(2.5rem);
+		-ms-transform: rotate(90deg) translateX(2.5rem);
+		-o-transform: rotate(90deg) translateX(2.5rem);
+	}
+
+	.right {
+		transform: rotate(90deg) translateX(-2.5rem);
+		-webkit-transform: rotate(90deg) translateX(-2.5rem);
+		-moz-transform: rotate(90deg) translateX(-2.5rem);
+		-ms-transform: rotate(90deg) translateX(-2.5rem);
+		-o-transform: rotate(90deg) translateX(-2.5rem);
+	}
+
+	.info-container {
+		justify-content: flex-start;
+		gap: 5rem;
+	}
+	.about-page {
+		width: 100vw;
+		padding: 1rem;
+	}
+
+	.about-page p {
+		font-size: 1rem;
+	}
+
+	.nav {
+		width: 100%;
+		font-size: 0.8rem;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.btn-theme {
+		display: none;
+	}
+
+	main {
+		justify-content: center;
+		gap: 1rem;
+		padding-top: 15vh;
+	}
+
+	.title-section {
+		text-align: center;
+		align-items: center;
+	}
+
+	.title-section h1 {
+		font-size: 1.2rem;
+	}
 }

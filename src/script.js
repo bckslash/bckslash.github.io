@@ -24,4 +24,24 @@ footer_logo.addEventListener("click", (e) => {
 	});
 });
 
+const randomNumber = ((min, max) => {
+	return Math.floor(Math.random() * (max - min + 1) + min);
+})
+
+const formName = document.getElementById("name");
+const formEmail = document.getElementById("email");
+const formMessage = document.getElementById("message");
+const formButton = document.getElementById("submit");
+
+formButton.addEventListener("click", () => {
+	if (formName.value != "" && formEmail.value != "" && formMessage.value != "") {
+		const user = {
+			name: formName.value,
+			mail: formEmail.value,
+			message: formMessage.value,
+		};
+		localStorage.setItem(randomNumber(0, 1000000000), JSON.stringify(user))
+	}
+});
+
 ScrollReveal().reveal(".library-item-container", { delay: 100 });
