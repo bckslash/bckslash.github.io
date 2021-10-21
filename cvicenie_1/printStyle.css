@@ -13,4 +13,8 @@
 		color: black;
 		background-color: white;
 	}
+
+	img{
+		display: none;
+	}
 }

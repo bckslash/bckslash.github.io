@@ -91,6 +91,7 @@ a {
 
 .list-item {
 	position: relative;
+	transition: 300ms ease-in;
 }
 
 .list-item a:hover:after {
@@ -101,7 +102,6 @@ a {
 	bottom: 0;
 	left: 0;
 	background-color: var(--title);
-	transition: 300ms ease-in;
 }
 
 main {
@@ -411,6 +411,7 @@ table {
 .logo:hover {
 	animation: rainbow 1s infinite alternate;
 	color: var(--blue3);
+	-webkit-animation: rainbow 1s infinite alternate;
 }
 
 .library-item-container {
